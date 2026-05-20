@@ -125,13 +125,7 @@ footer {
 <section>
     <h2>最新のお知らせ</h2>
     <p> ・市からの回覧は <a href="https://www.city.tsukuba.lg.jp/kurashi/community/kukai/1009249/index.html" target="_blank">ここから確認できます</a>。</p>
-    <h3 id="bousai">防災無線が自治会で使用できない理由（つくば市）</h3>
-<p>
-つくば市では防災行政無線がデジタル方式へ移行し、<br>
-自治会による直接操作（マイク放送など）は禁止されています。<br>
-旧式のアナログ設備は総務省の指針により廃止され、市の危機管理課のみが操作できます。<br>
-自治会が放送を希望する場合は、市へ依頼し、市が内容を確認した上で放送する方式となっています。
-</p>
+    <p> ・防災無線は使用できません。<a href="#" onclick="openPopup(); return false;">詳しくはこちら</a></p>
     <p> ・市内一斉清掃のお知らせ<br>
         　　　６月７日（日） ０９：００～、自治会館前に集合してください。<br>
         　　　持ち物：草刈り用具、手袋<br>
@@ -144,6 +138,45 @@ footer {
 <footer>
     © 2026 富士見台自治会
 </footer>
+<div id="popup" style="
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:white;
+  padding:20px;
+  border:2px solid #c9a066;
+  box-shadow:0 0 10px rgba(0,0,0,0.3);
+  width:80%;
+  max-width:400px;
+  z-index:9999;
+">
+  <h3>防災無線が自治会で使用できない理由</h3>
+  <p>
+    つくば市では防災行政無線がデジタル方式へ移行し、<br>
+    自治会による直接操作（マイク放送など）は禁止されています。<br>
+    旧式のアナログ設備は総務省の指針により廃止され、市の危機管理課のみが操作できます。<br>
+    自治会が放送を希望する場合は、市へ依頼し、市が内容を確認した上で放送する方式となっています。
+  </p>
+  <button onclick="closePopup()" style="
+    margin-top:10px;
+    padding:5px 10px;
+    background:#c9a066;
+    color:white;
+    border:none;
+    cursor:pointer;
+  ">閉じる</button>
+</div>
+
+<script>
+function openPopup() {
+  document.getElementById('popup').style.display = 'block';
+}
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+</script>
 
 </body>
 </html>
