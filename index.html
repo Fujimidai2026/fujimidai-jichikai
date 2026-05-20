@@ -125,6 +125,7 @@ footer {
 <section>
     <h2>最新のお知らせ</h2>
     <p> ・市からの回覧は <a href="https://www.city.tsukuba.lg.jp/kurashi/community/kukai/1009249/index.html" target="_blank">ここから確認できます</a>。</p>
+    <p> ・自治会作成の回覧は <a href="#" onclick="openPdfPopup(); return false;">こちらから確認できます</a>。</p>
     <p> ・防災無線は使用できません。<a href="#" onclick="openPopup(); return false;">詳しくはこちら</a></p>
     <p> ・市内一斉清掃のお知らせ<br>
         　　　６月７日（日） ０９：００～、自治会館前に集合してください。<br>
@@ -174,6 +175,47 @@ function openPopup() {
 }
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
+}
+</script>
+<div id="pdfPopup" style="
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:white;
+  padding:20px;
+  border:2px solid #c9a066;
+  box-shadow:0 0 10px rgba(0,0,0,0.3);
+  width:80%;
+  max-width:400px;
+  z-index:9999;
+">
+  <h3>自治会作成の回覧資料</h3>
+  <p>
+    以下の資料をご確認ください。<br><br>
+
+    ・<a href="PDF0415.pdf" target="_blank">0415回覧板（PDF）</a><br>
+    ・<a href="PDF0501.pdf" target="_blank">0501回覧板（PDF）</a><br>
+    ・<a href="PDF0515.pdf" target="_blank">0515回覧版（PDF）</a><br>
+  </p>
+
+  <button onclick="closePdfPopup()" style="
+    margin-top:10px;
+    padding:5px 10px;
+    background:#c9a066;
+    color:white;
+    border:none;
+    cursor:pointer;
+  ">閉じる</button>
+</div>
+
+<script>
+function openPdfPopup() {
+  document.getElementById('pdfPopup').style.display = 'block';
+}
+function closePdfPopup() {
+  document.getElementById('pdfPopup').style.display = 'none';
 }
 </script>
 
