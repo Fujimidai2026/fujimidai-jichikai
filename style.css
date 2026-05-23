@@ -95,3 +95,7 @@ section p {
     margin: 0;               /* 行頭をそろえる */
     padding: 0;
 }
+/* ▼ 回覧板・環境ページの行間を広げる */
+section p {
+    line-height: 1.8;
+}
