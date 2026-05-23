@@ -80,13 +80,18 @@ h1 {
         font-size: 30px;
     }
 }
-/* ▼ 回覧板一覧を中央にする */
+/* ▼ 回覧板一覧を中央に置きつつ、文字は左揃えにする */
 section {
-    text-align: center;
+    width: fit-content;      /* 内容の幅に合わせる */
+    margin: 0 auto;          /* ブロック全体を中央に配置 */
+}
+
+section h2 {
+    text-align: center;      /* タイトルだけ中央 */
 }
 
 section p {
-    text-align: left;     /* リンクは左揃え */
-    margin-left: 0;       /* 左の位置をそろえる */
-    padding-left: 0;      /* 余白を消す */
+    text-align: left;        /* リンクや文章は左揃え */
+    margin: 0;               /* 行頭をそろえる */
+    padding: 0;
 }
