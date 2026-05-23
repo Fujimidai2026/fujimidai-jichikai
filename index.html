@@ -97,9 +97,19 @@ footer {
           height: auto;
       }
   }
+h1 {
+    font-size: 28px;      /* PC用（お好みで） */
+    white-space: nowrap;  /* できるだけ折り返さない */
+}
+
+/* スマホ用に少し小さくする */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;  /* スマホで1行に収まるサイズ */
+    }
+}
 
 </style>  
-</style>
 </head>
 
 <body>
