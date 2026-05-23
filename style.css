@@ -9,6 +9,10 @@ header {
     padding: 0;
 }
 
+p, h1 {
+    margin-top: 0;
+}
+
 /* メニュー（ボタン） */
 nav {
     background: #ffffff;
