@@ -99,3 +99,14 @@ section p {
 section p {
     line-height: 1.8;
 }
+/* ▼ 行間を広げる（PC・スマホ共通） */
+section p {
+    line-height: 1.8;
+}
+
+/* ▼ スマホでも確実に行間を広げる */
+@media (max-width: 600px) {
+    section p {
+        line-height: 1.8;
+    }
+}
