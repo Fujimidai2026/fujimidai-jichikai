@@ -80,3 +80,7 @@ h1 {
         font-size: 30px;
     }
 }
+/* ▼ 回覧板一覧を中央にする */
+section h2 {
+    text-align: center;
+}
