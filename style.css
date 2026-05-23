@@ -4,7 +4,11 @@ body {
     padding: 0;
 }
  {
-    font-family: "Yu Gothic", "Yu Gothic UI", "Hiragino Sans", "Meiryo", sans-serif;
+    font-family: "Yu Gothic", "Yu Gothic UI", sans-serif;
+}
+{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 header {
     margin: 0;
