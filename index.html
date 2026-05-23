@@ -23,22 +23,32 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: center;
-    gap: 20px;   /* ← メニューの間隔が広がって見やすくなる */
+    gap: 20px;   /* ボタン同士の間隔 */
 }
 
 nav li {
-    margin: 5px 15px;
+    margin: 0;
 }
 
 nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #c9a066;
+    background: #fdf7ea;
     text-decoration: none;
     color: #333;
     font-weight: bold;
     font-size: 18px;
 }
+
+nav a:hover {
+    background: #ffe0a3;
+}
+
 
 /* 大きな写真（未使用なら削除OK） */
 .hero {
