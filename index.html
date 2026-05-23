@@ -26,11 +26,7 @@ nav ul {
     padding: 15px;
     display: flex;
     justify-content: center;
-    gap: 20px;   /* ボタン同士の間隔 */
-}
-
-nav li {
-    margin: 0;
+    gap: 20px;
 }
 
 nav a {
@@ -43,20 +39,11 @@ nav a {
     color: #333;
     font-weight: bold;
     font-size: 18px;
-    white-space: nowrap;   /* ← スマホで折り返し禁止 */
+    white-space: nowrap;
 }
-
 
 nav a:hover {
     background: #ffe0a3;
-}
-
-
-/* 大きな写真（未使用なら削除OK） */
-.hero {
-    width: 100%;
-    height: 250px;
-    background: url("photo.jpg") center/cover no-repeat;
 }
 
 /* セクション */
@@ -95,45 +82,37 @@ footer {
     margin-top: 40px;
 }
 
-    /* PC用：画像は高さ250pxでトリミング */
-  .header-img img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
-  }
-
-  /* スマホ用：画像の高さを自動にする */
-  @media (max-width: 600px) {
-      .header-img img {
-          height: auto;
-      }
-  }
-h1 {
-    font-size: 38px;
-    white-space: nowrap;
+/* ヘッダー画像 */
+.header-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
-/* スマホ用に少し小さくする */
+/* スマホ対応 */
 @media (max-width: 600px) {
+    .header-img img {
+        height: auto;
+    }
     h1 {
-        font-size: 30px;  /* スマホで1行に収まるサイズ */
+        font-size: 30px;
     }
 }
-
-</style>  
+</style>
 </head>
 
 <body>
 
-<!-- ★ ヘッダー画像（ここが正しい位置） -->
 <header class="header-img">
   <img src="fujimidai_header.JPG" alt="">
 </header>
+
 <p style="text-align:center; margin:5px 0; font-size:20px;">
     地域の安心・安全を守る自治会
 </p>
 <h1 style="text-align:center; margin:0;">つくば市富士見台自治会</h1>
+
 <nav>
   <ul>
     <li><a href="index.html">トップ</a></li>
@@ -144,14 +123,23 @@ h1 {
 
 <section>
     <h2>最新のお知らせ</h2>
-    <p> ・市内一斉清掃のお知らせ<br>
-        　　回覧版　260515 市内一斉清掃を参照ください。<br>   　　
+
+    <p>・市内一斉清掃のお知らせ<br>
+        　　回覧版「260515 市内一斉清掃」を参照ください。<br>
     </p>
-    <p> ・防災無線は使用不可。<a href="#" onclick="openPopup(); return false;">理由はこちら</a></p>
-    <p>・自治会館使用日程（2026上期）は 
-　　<a href="自治会館使用日程_2026上期.pdf" target="_blank">こちら</a> </p>
-    <p>・旧下水処理場跡地の利用の回答は 
-　　<a href="旧下水処理場跡地の利用の回答.JPG" target="_blank">こちら</a> </p>
+
+    <p>・防災無線は使用不可。
+        <a href="#" onclick="openPopup(); return false;">理由はこちら</a>
+    </p>
+
+    <p>・自治会館使用日程（2026上期）は
+        <a href="自治会館使用日程_2026上期.pdf" target="_blank">こちら</a>
+    </p>
+
+    <p>・旧下水処理場跡地の利用の回答は
+        <a href="旧下水処理場跡地の利用の回答.JPG" target="_blank">こちら</a>
+    </p>
+
     <a class="big-button" href="#">▶ ゴミ出しルールを見る</a>
     <a class="big-button" href="#">▶ 防災情報（避難場所など）</a>
 </section>
@@ -159,6 +147,8 @@ h1 {
 <footer>
     © 2026 つくば市富士見台自治会
 </footer>
+
+<!-- 防災無線ポップアップ -->
 <div id="popup" style="
   display:none;
   position:fixed;
@@ -195,38 +185,6 @@ function openPopup() {
 }
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
-}
-</script>
-<div id="pdfPopup" style="
-  display:none;
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  background:white;
-  padding:20px;
-  border:2px solid #c9a066;
-  box-shadow:0 0 10px rgba(0,0,0,0.3);
-  width:80%;
-  max-width:400px;
-  z-index:9999;
-">
-  <button onclick="closePdfPopup()" style="
-    margin-top:10px;
-    padding:5px 10px;
-    background:#c9a066;
-    color:white;
-    border:none;
-    cursor:pointer;
-  ">閉じる</button>
-</div>
-
-<script>
-function openPdfPopup() {
-  document.getElementById('pdfPopup').style.display = 'block';
-}
-function closePdfPopup() {
-  document.getElementById('pdfPopup').style.display = 'none';
 }
 </script>
 
