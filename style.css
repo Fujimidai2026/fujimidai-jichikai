@@ -37,10 +37,11 @@ nav a:hover {
 /* ヘッダー画像 */
 .header-img img {
     width: 100%;
-    height: 250px;
+    height: auto;
     object-fit: cover;
     display: block;
 }
+
 
 @media (max-width: 600px) {
     .header-img img {
