@@ -84,3 +84,9 @@ h1 {
 section {
     text-align: center;
 }
+
+section p {
+    text-align: left;     /* リンクは左揃え */
+    margin-left: 0;       /* 左の位置をそろえる */
+    padding-left: 0;      /* 余白を消す */
+}
