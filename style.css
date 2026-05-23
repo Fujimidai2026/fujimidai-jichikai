@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+ {
+    font-family: "Yu Gothic", "Yu Gothic UI", "Hiragino Sans", "Meiryo", sans-serif;
+}
 header {
     margin: 0;
     padding: 0;
