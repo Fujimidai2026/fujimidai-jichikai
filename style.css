@@ -1,5 +1,5 @@
 /* 余白を完全に消す */
-{
+body {
     margin: 0;
     padding: 0;
 }
