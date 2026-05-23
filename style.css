@@ -42,7 +42,6 @@ nav a:hover {
     display: block;
 }
 
-
 @media (max-width: 600px) {
     .header-img img {
         height: auto;
