@@ -127,3 +127,10 @@ section p {
     margin: 0 0 0px;    /* ← 上の余白を0下を0に */
     color: #222;
 }
+footer {
+    text-align: center;
+    margin-top: 20px; /* ← 1行分の余白 */
+    padding: 10px 0;
+    color: #333;
+    font-size: 14px;
+}
