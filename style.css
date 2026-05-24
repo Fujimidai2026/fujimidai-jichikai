@@ -110,3 +110,19 @@ section p {
         line-height: 1.8;
     }
 }
+/* ▼ サブタイトル（中央寄せ） */
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* ▼ タイトル（中央寄せ） */
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+    color: #222;
+}
