@@ -51,7 +51,11 @@ nav a {
 nav a:hover {
     background: #ffe0a3;
 }
-
+/* ヘッダー全体の余白を消す */
+.header-img {
+    margin: 0;
+    padding: 0;
+}
 /* ヘッダー画像 */
 .header-img img {
     width: 100%;
