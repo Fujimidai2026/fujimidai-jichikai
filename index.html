@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>つくば市富士見台自治会</title>
 
-<!-- ▼ 外部CSSを読み込み（style.css を推奨） -->
+<!-- ▼ 外部CSS -->
 <link rel="stylesheet" href="style.css?v=3">
 
 </head>
@@ -14,7 +14,7 @@
 
 <!-- ▼ ヘッダー画像 -->
 <header class="header-img">
-  <img src="fujimidai_header.JPG" alt="">
+  <img src="img/fujimidai_header.JPG" alt="">
 </header>
 
 <!-- ▼ サブタイトル -->
@@ -23,7 +23,7 @@
 <!-- ▼ タイトル -->
 <h1 class="title">つくば市富士見台自治会</h1>
 
-<!-- ▼ ナビゲーションメニュー -->
+<!-- ▼ ナビゲーション -->
 <nav>
   <ul>
     <li><a href="index.html">トップ</a></li>
@@ -32,12 +32,11 @@
   </ul>
 </nav>
 
-<!-- ▼ メインコンテンツ -->
+<!-- ▼ メインコンテンツ（回覧板・環境と同じ構造） -->
 <section>
 
   <h2>最新のお知らせ</h2>
 
-  <!-- ▼ 行間は style.css の section p { line-height: 1.8; } が適用される -->
   <p>・市内一斉清掃のお知らせ<br>
   　　回覧版「260515 市内一斉清掃」を参照ください。</p>
 
@@ -53,7 +52,6 @@
       <a href="pdf/旧下水処理場跡地の利用の回答.JPG" target="_blank">こちら</a>
   </p>
 
-  <!-- ▼ ボタン -->
   <a class="big-button" href="#">▶ ゴミ出しルールを見る</a>
   <a class="big-button" href="#">▶ 防災情報（避難場所など）</a>
 
@@ -75,7 +73,7 @@
   <button onclick="closePopup()">閉じる</button>
 </div>
 
-<!-- ▼ ポップアップ制御スクリプト -->
+<!-- ▼ ポップアップ制御 -->
 <script>
 function openPopup() {
   document.getElementById('popup').style.display = 'block';
