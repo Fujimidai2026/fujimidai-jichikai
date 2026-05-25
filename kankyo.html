@@ -71,10 +71,11 @@
 </div>
 <script>
   const modal = document.getElementById("gomiModal");
-  const btn = document.getElementById("gomiBtn");
+  const link = document.getElementById("gomiLink");
   const closeBtn = document.querySelector(".close");
 
-  btn.onclick = function() {
+  link.onclick = function(event) {
+    event.preventDefault(); // ←これが必須！
     modal.style.display = "block";
   }
 
@@ -88,6 +89,7 @@
     }
   }
 </script>
+
 
 </body>
 </html>
