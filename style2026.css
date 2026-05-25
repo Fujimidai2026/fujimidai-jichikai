@@ -78,7 +78,7 @@ h1 {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 /* ▼ 回覧板一覧を中央に置きつつ、文字は左揃えにする */
