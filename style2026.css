@@ -167,3 +167,6 @@ p {
   font-size: 28px;
   cursor: pointer;
 }
+.gomi-links {
+  line-height: 1.8;   /* ← 行間が広がる（1.6〜2.0が見やすい） */
+}
